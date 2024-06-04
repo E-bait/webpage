@@ -19,7 +19,7 @@ ul{
     top: 0;
     left: 0;
     width: 100%;
-    height: 15%;
+    height: 13.5%;
     background-color: rgba(0, 0, 0, 0.8); 
     z-index: 1; 
 }
@@ -62,7 +62,7 @@ body {
   }
   
   .logo img {
-    height: 160px; 
+    height: 140px; 
   }
 
   .menu-item:hover {
@@ -98,25 +98,145 @@ body {
 }
 
 .full-screen-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
 .full-screen-image img {
-    min-width: 100%;
-    min-height: 50%;
-    width: auto;
-    height: auto;
+  width: 100%;
+  height: 100%;
+
+  display: block;
 }
 
- 
- @media screen and (min-width: 769px) {
-    .full-screen-image img {
-         width: 100%; 
-         height: 100vh; 
-     }
- }
+.line {
+  width: 100%;
+  height: 20px;
+  background-color: red;
+  position: absolute; /* Абсолютное позиционирование внутри контейнера */
+  bottom: 0.5px; /* Позиционируем линию внизу контейнера */
+}
+
+
+.overlay {
+  width: 100%;
+  height: 200px; /* Высота прямоугольника */
+  position: absolute; /* Абсолютное позиционирование внутри контейнера */
+  bottom: 20px; /* Поднимаем над линией */
+  background-color: rgba(13, 13, 13, 0.8); /* Прозрачный белый цвет */
+}
+
+.centered-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: 'Lato';
+  font-size: 42px;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.slider {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.slide {
+  flex: 0 0 100%; /* Каждый слайд занимает всю ширину контейнера */
+  text-align: center; /* Центрируем содержимое */
+  color: #ccc;
+  margin-top: 20px; /* Уменьшаем верхний отступ */
+  user-select: none; /* Запрещаем выделение текста */
+}
+
+/* Стили для квадратиков */
+.squares-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    background-color: #ccc; /* Цвет квадратика */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Эффект "горения" */
+}
+
+.active {
+    background-color: red; /* Цвет квадратика при активации */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1); /* Усиливаем эффект "горения" */
+}
+
+.product-block {
+  margin-top: 20px;
+  padding: 20px;
+
+  width: 100%; /* Выберите подходящую ширину блока */
+  margin: 0 auto; /* Центрируем блок по горизонтали */
+  background-color: #fff;
+  position: absolute; /* Абсолютное позиционирование */
+  bottom: -940px; /* Отодвигаем блок вниз на нужное расстояние */
+  left: 50%; /* Размещаем блок по центру горизонтально */
+  transform: translateX(-50%); 
+}
+.product-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; /* Выравнивание текста по центру */
+}
+.product-description {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+.product-slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px; /* Отступ сверху для фотографий */
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 111px; /* Отступы сверху/снизу 10px, слева/справа 15px */
+}
+
+
+
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.image-description {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.product-button {
+  display: block;
+  margin: 20px auto; /* Отступ сверху и снизу 20px, выравниваем по центру */
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.product-button:hover {
+
+  transform: scale(1.1);
+}
