@@ -1,141 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>КФХ</title>
-    <link rel="stylesheet" href = "style/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <title>Красный Колос</title>
 </head>
+<!-- Yandex Metrika -->
+<script type="text/javascript">
+  (function (m, e, t, r, i, k, a) {
+    m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+    m[i].l = 1 * new Date();
+    for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+    k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+  })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(97518872, "init", {
+    clickmap: true,
+    trackLinks: true,
+    accurateTrackBounce: true
+  });
+</script>
+<noscript>
+  <div><img src="https://mc.yandex.ru/watch/97518872" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
 
 <body>
-    <header class="header">
-        <div class="conteiner">
-            <div class="header__inner">
-                <nav class="menu">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                          <a href="#">Продукция</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="#">О нас</a>
-                        </li>
-                        <li class="logo">
-                          <img src="image/image 3 (2).svg" alt="Logo">
-                        </li>
-                        <li class="menu-item">
-                          <a href="#">Доставка</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="#">Контакты</a>
-                        </li>
-                      </ul>
-                </nav>
-                <ul class ="user-actions">
-                    <li class="user-actions__item">
-                        <a href="#" class="user-actions__link">+7(928) 154-33-36</a>
-                    </li>
-                    <li class="user-actions__item">
-                        <a href="#" class="user-actions__link">Заказать звонок</a>
-                    </li>
-                </ul>
-            </div>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="wrapper">
+      <div class="header_wrap">
+        <div class="header_logo">
+          <img src="image/Group 11.png" alt="">
         </div>
-    </header>
-
-    
-
-    <div class="full-screen-image">
-      <img src="image/image 1.png" alt="Another full-screen image">
-  </div>
-  
-  <div class="centered-text">
-      <h1>Продажа сельскохозяйственной продукции</h1>
-  </div>
-  
-  <div class="overlay">
-      <div class="slider-container">
-          <div class="slider">
-              <div class="slide">
-                  <h1>Наша работа - щедрый урожай!</h1>
-              </div>
-              <div class="slide">
-                  <h1>Сельское наследие: традиции в каждом урожае!</h1>
-              </div>
-              <div class="slide">
-                  <h1>Сохраняем каждое зерно!</h1>
-              </div>
-              <div class="slide">
-                  <h1>Зерно по зерну: качество на каждом этапе!</h1>
-              </div>
-          </div>
-          <div class="squares-container">
-              <!-- Квадратики будут добавлены с помощью JavaScript -->
-          </div>
-      </div>
-  </div>
-  
-  <div class="line"></div>
-  
-  <div class="product-block">
-    <h2 class="product-title">Продукция</h2>
-    <p class="product-description">Наши зерновые культуры представляют собой идеальный выбор для тех, кто ценит качество и натуральность. Выращенные на экологически чистых полях нашего хозяйства, они обладают высоким содержанием питательных веществ.</p>
-    <div class="product-slider">
-      <div class="product-item">
-        <div class="product-image">
-          <img src="image/product_001_min.png" alt="Изображение продукции 1">
-        </div>
-        <div class="product-description">
-          <p class="image-description">ПШЕНИЦА (ГОСТ Р9353-2016)</p>
-        </div>
-      </div>
-      <div class="product-item">
-        <div class="product-image">
-          <img src="image/product_002_min.png" alt="Изображение продукции 2">
-        </div>
-        <div class="product-description">
-          <p class="image-description">ЯЧМЕНЬ (ГОСТ 28672-2019)</p>
-        </div>
-      </div>
-      <div class="product-item">
-        <div class="product-image">
-          <img src="image/product_003_min.png" alt="Изображение продукции 3">
-        </div>
-        <div class="product-description">
-          <p class="image-description">КУКУРУЗА (ГОСТ 13634-90)</p>
-        </div>
-      </div>
-      <div class="product-item">
-        <div class="product-image">
-          <img src="image/product_004_min.png" alt="Изображение продукции 3">
-        </div>
-        <div class="product-description">
-          <p class="image-description">Горох(ГОСТ 28674-2019)</p>
-        </div>
-      </div>
-      <div class="product-item">
-        <div class="product-image">
-          <img src="image/rozh.png" alt="Изображение продукции 3">
-        </div>
-        <div class="product-description">
-          <p class="image-description">Рожь (ГОСТ 16990-2017)</p>
-        </div>
-      </div>
-      <div class="product-item">
-        <div class="product-image">
-          <img src="image/millet-cereal-isolated-on-white-260nw-247589647.png" alt="Изображение продукции 3">
-        </div>
-        <div class="product-description">
-          <p class="image-description">Пшено</p>
+        <div class="header-container">
+          <nav class="header_menu">
+            <ul>
+              <li>
+                <a href="#section-product">Продукция</a>
+              </li>
+              <li>
+                <a href="#section-about">О нас</a>
+              </li>
+              <li>
+                <a href="#section-delivery">Доставка</a>
+              </li>
+              <li>
+                <a href="#section-contact">Контакты</a>
+              </li>
+              <li class="menu_contact">
+                <a class="phone-number hover-effect" href="https://wa.me/79281543336">+7(928) 154-33-36</a>
+                <a id="openModalBtn1" class="phone-number">Заказать звонок</a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
       </div>
-
     </div>
-    <button class="product-button">Узнать подробнее</button>
-  </div>
-  
-    <script src="script/script.js"></script>
-</body>
+  </header>
+  <!-- Блок Приветствия -->
+  <section class="image">
+    <div class="image_blok">
+      <div class="full-image">
+        <img src="image/image-1.webp" alt="Описание изображения">
+        <div class="centered-text">
+          <h1>Продажа сельскохозяйственной продукции</h1>
+        </div>
+      </div>
+      <div class="overlay">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <h1>Наша работа - щедрый урожай!</h1>
+            </div>
+            <div class="slide">
+              <h1>Сельское наследие: традиции в каждом урожае!</h1>
+            </div>
+            <div class="slide">
+              <h1>Сохраняем каждое зерно!</h1>
+            </div>
+            <div class="slide">
+              <h1>Зерно по зерну: качество на каждом этапе!</h1>
+            </div>
+          </div>
+          <div class="squares-container"></div>
+        </div>
+      </div>
+      <div class="line"></div>
+    </div>
+  </section>
+  <!-- Блок Продукция -->
+  <section class="product" id="section-product">
+    <div class="product-block">
+      <h2 class="product-title">Продукция</h2>
+      <p class="product-description">Наши зерновые культуры представляют собой идеальный выбор для тех, кто ценит
+        качество и натуральность. Выращенные на экологически чистых полях нашего хозяйства, они обладают высоким
+        содержанием питательных веществ.</p>
+      <div class="product-slider">
+        <div class="product-item">
+          <div class="product-image">
+            <img src="image/product_001_min.jpg" alt="Изображение продукции 1">
+          </div>
+          <div class="product-description">
+            <p class="image-description">ПШЕНИЦА (ГОСТ Р9353-2016)</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-image">
+            <img src="image/product_002_min.jpg" alt="Изображение продукции 2">
+          </div>
+          <div class="product-description">
+            <p class="image-description">ЯЧМЕНЬ (ГОСТ 28672-2019)</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-image">
+            <img src="image/product_003_min.jpg" alt="Изображение продукции 3">
+          </div>
+          <div class="product-description">
+            <p class="image-description">КУКУРУЗА (ГОСТ 13634-90)</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-image">
+            <img src="image/product_004_min.webp" alt="Изображение продукции 3">
+          </div>
+          <div class="product-description">
+            <p class="image-description">Горох(ГОСТ 28674-2019)</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-image">
+            <img src="image/rozh.webp" alt="Изображение продукции 3">
+          </div>
+          <div class="product-description">
+            <p class="image-description">Рожь (ГОСТ 16990-2017)</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-image">
+            <img src="image/psheno.webp" alt="Изображение продукции 3">
+          </div>
+          <div class="product-description">
+            <p class="image-description">Пшено</p>
+          </div>
+        </div>
+      </div>
+      <button id="openModalBtn" class="product-button">Узнать подробнее</button>
+      <div class="red-line"></div>
+    </div>
+  </section>
+  <!-- Блок О нас -->
+  <section class="about" id="section-about">
+    <div class="about-wrap">
+      <div class="about-block">
+        <h2 class="about-title">О нас</h2>
+        <p class="about-description">Крестьянско-фермерское хозяйство было основано в 1999 году. За эти
+          годы мы стали экспертами в области выращивания, хранения и переработки зерновых культур. Наш профессиональный
+          коллектив, состоящий из опытных агрономов, техников и других специалистов, стремится к постоянному развитию и
+          совершенствованию наших методов работы. Наша миссия – предоставить аграриям высококачественное зерно,
+          способствуя тем самым их успешному развитию и процветанию.</p>
+      </div>
+      <div class="photo-gallery">
+        <img src="image/комбайн.jpg" alt="Изображение техники 1" class="photo">
+        <img src="image/кировец.jpg" alt="Изображение техники 2" class="photo">
+        <img src="image/оборудование.webp" alt="Изображение техники 3" class="photo">
+      </div>
+      <div class="red-line"></div>
+    </div>
+  </section>
 
+  <!-- Блок Доставка -->
+  <section class="delivery" id="section-delivery">
+    <div class="delivery-wrap">
+      <div class="delivery-block">
+        <h2 class="delivery-title">Доставка</h2>
+        <div class="icon">
+          <img src="image/image 2 (1).png" alt="Иконка доставки" class="delivery-icon">
+        </div>
+        <p class="delivery-description">Мы осуществляем доставку по Ростовской области, при этом стоимость
+          рассчитывается индивидуально, с учетом дальности и веса груза.</p>
+        <button id="openModalBtn2" class="delivery-button">Рассчитать стоимость</button>
+      </div>
+    </div>
+  </section>
+  <!-- Блок Контакты -->
+  <section class="contact" id="section-contact">
+    <div class="contact-block">
+      <h2 class="contact-title">Контакты</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="info-item">
+            <p class="info-label">Адрес</p>
+            <p>
+              346219, пос. Светлый, Кашарский р-н, ул.<br> Молодежная д3, Ростовская область</p>
+          </div>
+          <div class="info-item">
+            <p class="info-label">Телефон</p>
+            <p>+7(928) 154-33-36</p>
+          </div>
+          <div class="info-item">
+            <p class="info-label">Почта</p>
+            <p>krasniikolos@ya.ru</p>
+          </div>
+          <div class="info-item">
+            <a href="https://wa.me/79281543336">
+              <img src="image/image 16.svg" alt="WhatsApp Icon" class="icon">
+            </a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <input type="text" id="name" placeholder="Ваше имя" required>
+          <input type="email" id="email" placeholder="Ваш email" required>
+          <input type="tel" id="phone" placeholder="Ваш телефон" required>
+          <textarea id="message" placeholder="Ваше сообщение" required></textarea>
+          <div class="checkbox-container">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">Согласен с обработкой персональных данных согласно закону № 152-ФЗ</label>
+          </div>
+          <button type="button" onclick="submitForm()">Отправить</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Подвал -->
+  <footer class="footer">
+    <p>&copy; 2024 Сизов Ю.А.</p>
+  </footer>
+
+
+
+  <!-- Модальное окно -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="contactForm" method="POST" action="send_email.php">
+
+        <input type="text" id="name" name="name" required placeholder="Имя">
+
+
+        <input type="tel" id="phone" name="phone" required required placeholder="Телефон">
+
+
+        <input type="email" id="email" name="email" required placeholder="Email">
+
+        <textarea id="message" name="message" required placeholder="Сообщение"></textarea>
+
+        <label for="privacy" style="color: #fff; display: flex; align-items: center;">
+          <input type="checkbox" id="privacy" required>
+          Согласен на обработку персональных данных согласно закону №152-ФЗ
+        </label>
+
+        <button type="submit" onclick="return validateForm()"">Отправить</button>
+          </form>
+      </div>
+    </div>
+    <script src=" script/scr.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/validation.js"></script>
+</body>
 </html>
