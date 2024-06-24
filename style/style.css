@@ -10,7 +10,6 @@ html {
   overflow: hidden;
 }
 
-
 p,
 a,
 h2 {
@@ -153,8 +152,8 @@ ul {
   color: #ccc;
   margin-top: 20px;
   user-select: none;
-  
 }
+
 .squares-container {
   display: flex;
   justify-content: center;
